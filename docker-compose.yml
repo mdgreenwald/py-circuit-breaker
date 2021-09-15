@@ -1,0 +1,19 @@
+version: "3.8"
+services:
+  nginx:
+    container_name: nginx
+    image: nginx:stable-alpine
+    ports:
+    - "8080:80"
+    environment:
+    - NGINX_HOST=foobar.com
+    - NGINX_PORT=8080
+    restart: always
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost"]
+      interval: 5s
+      timeout: 3s
+      retries: 3
+      start_period: 3s
+
+#docker exec -it nginx /bin/sh -c 'kill 1'
