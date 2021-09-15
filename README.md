@@ -1,3 +1,5 @@
+![test](https://github.com/mdgreenwald/py-circuit-breaker/workflows/PyTest/badge.svg)
+
 # py-circuit-breaker
 *Python Circuit Breaker Library*
 
