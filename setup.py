@@ -9,6 +9,6 @@ setup(
     license='Apache-2.0',
     install_requires=[],
     setup_requires=['pytest-runner'],
-    tests_require=['pytest==6.2.5'],
+    tests_require=['pytest==7.2.2'],
     test_suite='tests'
 )
